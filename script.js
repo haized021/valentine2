@@ -1,20 +1,31 @@
-const img = document.getElementById("mainImg");
-const question = document.getElementById("question");
+const noBtn = document.getElementById("noBtn");
+const yesBtn = document.getElementById("yesBtn");
 
+function moveNoButton() {
+  const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
+  const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
+
+  noBtn.style.left = `${x}px`;
+  noBtn.style.top = `${y}px`;
+}
+
+// Move on hover (PC)
+noBtn.addEventListener("mouseover", moveNoButton);
+
+// Move on touch (Mobile)
+noBtn.addEventListener("touchstart", moveNoButton);
+
+// YES button effect
 yesBtn.addEventListener("click", () => {
-  // change image
-  img.src = "YES.png";
-
-  // change text
-  question.textContent = "YESsSsSsS! 💖 I'll see you on Feb 16 💕";
-
-  // hide No button
-  noBtn.style.display = "none";
-
-  // optional: disable Yes button
-  yesBtn.disabled = true;
-  yesBtn.textContent = "💘";
+  document.body.innerHTML = `
+    <div style="text-align:center">
+      <h1>YESsSsSsS!💖</h1>
+      <p>I'll See you on feb 16!💖💖</p>
+      <img src="https://media.tenor.com/8GZNOvQ4pPAAAAAC/love-bear.gif" width="250">
+    </div>
+  `;
 });
+
 
 
 
