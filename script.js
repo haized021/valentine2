@@ -21,10 +21,11 @@ yesBtn.addEventListener("click", () => {
     <div style="text-align:center">
       <h1>YESsSsSsS!💖</h1>
       <p>I'll See you on feb 16!💖💖</p>
-      <img src="https://media.tenor.com/8GZNOvQ4pPAAAAAC/love-bear.gif" width="250">
+      <img src="YES.png" class="cute-img" alt="Yes">
     </div>
   `;
 });
+
 
 
 
