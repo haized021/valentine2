@@ -37,3 +37,10 @@ button {
   background-color: #ccc;
   position: absolute; /* REQUIRED */
 }
+
+.cute-img {
+  width: 220px;
+  display: block;
+  margin: 0 auto 15px;
+  border-radius: 12px;
+}
