@@ -19,12 +19,13 @@ noBtn.addEventListener("touchstart", moveNoButton);
 yesBtn.addEventListener("click", () => {
   document.body.innerHTML = `
     <div style="text-align:center">
-      <h1>YESsSsSsS!💖</h1>
-      <p>I'll See you on feb 16!💖💖</p>
+      <h1>YES! Thank you!💖</h1>
+      <p>I'll see you soon on feb 16!💖💖</p>
       <img src="YES.png" class="cute-img" alt="YES">
     </div>
   `;
 });
+
 
 
 
